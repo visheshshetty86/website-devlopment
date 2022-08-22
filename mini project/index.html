@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SNEAKER HEADZ</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap"
+		rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+	    .btn-mid{
+			margin:15px auto;
+			display: block;
+			width:100px;
+			text-align: center;
+			background-color: #555;
+		}
+		.small-container {
+            max-width: 1250px;
+		}
+		.menu{
+			width: 50px;
+			height:60px;
+			display: flex;
+			justify-content: flex-end;
+			position: relative;
+			left:95.5%;
+			background: black;
+			overflow: hidden;
+			z-index: 5;
+		}
+		.burger{
+			width:2.5rem;
+			height:.2rem;
+			background: white;
+			transition: all .5s ease-in-out;
+			margin: 27px 10px;
+			
+		}
+		
+		.burger::before,
+		.burger::after{
+			content: "";
+			position: absolute;
+			width: 2.5rem;
+			height:0.2rem;
+			background-color:white;
+			transition: all .5s ease-in-out;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="header">
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="signin.html">login</a>
+			<a href="cart.html">Cart</a>
+		</div>
+
+		<!-- Use any element to open the sidenav -->
+		<div class="menu">
+			<div class="burger"></div>
+		</div>
+
+
+		<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	</div>
+
+	<!----categories--->
+	<div class="categories">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<img src="categories/categories1.jpg">
+				</div>
+				<div class="col-3">
+					<img src="categories/categroies2.jpg">
+				</div>
+				<div class="col-3">
+					<img src="categories/categories4.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!----products--->
+	<div class="small-container">
+		<h2 class="title">Featured products</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="new releases/nw releases1.jpg">
+				<h4>ELECTROVE 2 'FILA RED </h4>
+				<p>₹ 9,999</p>
+				<a href="#" class="btn btn-mid" value="1">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="new releases/nw releases2.jpg">
+				<h4>KYRIE INFINITY EP</h4>
+				<p>₹ 11,495 </p>
+				<a href="#" class="btn btn-mid" value="2">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="new releases/nw releases 3.jpg">
+				<h4>BASQUIAT CHUCK 70</h4>
+				<p>₹ 8,999</p>
+				<a href="#" class="btn btn-mid" value="3">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="new releases/nw releases 4.jpg">
+				<h4>KD14 EP 'RON ENGLISH</h4>
+				<p>₹ 12,321</p>
+				<a href="#" class="btn btn-mid" value="4">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="new releases/nw releases 5.jpg">
+				<h4>AIR FORCE 1 '07 LV9 </h4>
+				<p>₹ 9,695</p>
+				<a href="#" class="btn btn-mid" value="5">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="new releases/nw releases 6.jpg">
+				<h4>AIR FORCE 1 '07 LV8</h4>
+				<p>₹ 9,695</p>
+				<a href="#" class="btn btn-mid" value="6">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="new releases/nw releases 7.jpg">
+				<h4>KYRIE INFINITY EP 'KY-D'</h4>
+				<p>₹ 11,495</p>
+				<a href="#" class="btn btn-mid" value="7">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="new releases/nw releases 8.jpg">
+				<h4>AIR PRESTO 'ORANGE</h4>
+				<p>₹ 11,495</p>
+				<a href="#" class="btn btn-mid" value="8">ADD</a>
+			</div>
+		</div>
+		<h2 class="title">New Apparel</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="accessories/acce1.jpg">
+				<h4>M J FLT HRTG 85 SS CREW</h4>
+				<p>₹ 2,695</p>
+				<a href="#" class="btn btn-mid" value="9">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="accessories/acce2.jpg">
+				<h4>M J FLT HRTG 85 SS CREW </h4>
+				<p>₹ 2,695</p>
+				<a href="#" class="btn btn-mid" value="11">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="accessories/acce3.jpg">
+				<h4>SW ANORAK 'BROWN'</h4>
+				<p>₹ 12,999</p>
+				<a href="#" class="btn btn-mid" value="12">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="accessories/acce4.jpg">
+				<h4>SEAN  CARGO PANTS</h4>
+				<p>₹ 7,999</p>
+				<a href="#" class="btn btn-mid" value="13">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="accessories/acc5.jpg">
+				<h4>M J JUMPMAN SS CREW</h4>
+				<p>₹ 1,495</p>
+				<a href="#" class="btn btn-mid">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="accessories/acce6.jpg">
+				<h4>ESSENTIALS 22 LS TEE </h4>
+				<p>₹ 2,800</p>
+				<a href="#" class="btn btn-mid">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="accessories/acce7.jpg">
+				<h4>ESSENTIALS 22 SHORTS</h4>
+				<p>₹ 3,400</p>
+				<a href="#" class="btn btn-mid">ADD</a>
+			</div>
+			<div class="col-4">
+				<img src="accessories/acce8.jpg">
+				<h4>W J HERITAGE OVRSZ TEE</h4>
+				<p>₹ 2,895</p>
+				<a href="#" class="btn btn-mid">ADD</a>
+			</div>
+		</div>
+	</div>
+	<!----limited edition-->
+	<div class="limited">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-5">
+					<img src="limited edition/limited.jpg" class="limited-img">
+				</div>
+				<div class="col-5">
+					<p>Limited time offer Hurry up! only on sneaker headz</p>
+					<h1>NIKE AIR JORDAN X DIOR</h1>
+					<small>One of the most highly anticipated launches of the year. The Dior x Air Jordan 1 High
+						sneakers are the first collaboration between the luxury powerhouse and sneaker giant. Crafted
+						from wolf grey and sail white leather, these Air Jordan 1 High sneakers take on the iconic
+						high-top silhouette, and update it by way of a grey Dior monogram swoosh logo. </small>
+					<a href="" class="btn">Buy Now &#8594;</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!----testimonial-->
+	<div class="testimonial">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper quam ac sem iaculis</p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<img src="testimonial/download.jpg">
+					<h3>Raftaar</h3>
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper quam ac sem iaculis, </p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<img src="testimonial/download (1).jpg">
+					<h3>KSI</h3>
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper quam ac sem iaculis, </p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<img src="testimonial/download (2).jpg">
+					<h3>Logan paul</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------brands--------------->
+	<div class="brands">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-6">
+					<img src="brands/brand1.png">
+				</div>
+				<div class="col-6">
+					<img src="brands/brands2.png">
+				</div>
+				<div class="col-6">
+					<img src="brands/brands3.png">
+				</div>
+				<div class="col-6">
+					<img src="brands/brands4.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!----footer------>
+	<div class="footer">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download Our App</h3>
+				<p>Download App for Android and ios mobile phone.</p>
+				<div class="app-logo">
+					<img src="brands/play-store.png">
+					<img src="brands/app-store.png">
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="brands/download-removebg-preview.png">
+				<p>Sneaker headz is India’s first multi-brand sneaker store, based in Delhi..</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>follow us</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>Youtube</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2022 - @prinson, @vishesh</p>
+
+	</div>
+	<!-------js for toglle----->
+	<script>
+		// var menuitems = document.getElementById(".menuitems");
+
+		// menuitems.style.maxHeight = "0px";
+
+		// function menutoggle(){
+		// 	if(menuitems.style.maxHeight == "0px")
+		// {
+		// 	menuitems.style.maxHeight = "200px";
+		// }
+		// else
+		// {
+		// 	menuitems.style.maxHeight = "0px";
+		// }
+
+
+
+		const menu = document.querySelector(".menu");
+		const nav = document.querySelector(".sidenav");
+		let menuopen = false;
+		menu.addEventListener('click', () => {
+			if (!menuopen) {
+				menu.classList.add("open");
+				nav.style.width = "200px"
+				menuopen = true;
+				menu.style.display = "none";
+			}
+			else {
+				menu.classList.remove("open");
+				menuopen = false;
+			}
+		});
+
+		function closeNav() {
+			nav.style.width = "0px";
+			menu.style.display = "block";
+			menu.classList.remove("open");
+			menuopen = false;
+		}
+
+
+		const add = document.querySelectorAll(".btn-mid");
+        const hello = document.querySelectorAll(".btn-mid").length;
+        console.log(hello);
+		var i;
+		for (i=0;i<hello;i++)
+		{
+			add[i].addEventListener('click' , ()=>
+			{
+				alert("prodcut added to cart");
+			})
+		}
+
+
+
+	</script>
+</body>
+
+</html>

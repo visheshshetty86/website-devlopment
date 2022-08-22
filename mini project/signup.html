@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VP</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width:100vw;
+            height:100vh;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+        .left-part{
+            width:50%;
+            height:100%;
+            position: relative;
+        }
+        .image{
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height:100%;
+            object-position: top;
+            left:0;
+            top:0;
+        }
+        .right-part{
+            width:50%;
+            height:100%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-box{
+            width:40%;
+     
+        }
+        .form-box h1{
+            text-align: center;
+            padding-bottom:1rem;
+            text-transform: uppercase;
+            position: relative;
+            color:#607d8b;
+        }
+
+        .form-box h1::before{
+            content: "";
+            position: absolute;
+            bottom:0;
+            width:22%;
+            height:0.2rem;
+            background-color: red;
+        }
+        .input-box{
+            padding-top:1rem;
+        }
+        .input-box input{
+            width:100%;
+            height:2.2rem;
+            border-radius: 2rem;
+            outline:none;
+            border:1px solid black;
+            margin-top:.4rem;
+            text-align:center;
+            color:red;
+        }
+        .input-box input:focus{
+            border: 2px solid red;
+        }
+        .input-box span{
+            margin-left:.5rem;
+            text-transform: uppercase;
+            color:#607d8b;
+        }
+        button{
+            margin: 20px auto;
+            display: block;
+            width:35%;
+            height:2.3rem;
+            border:2px solid red;
+            background-color: red;
+            color:white;
+            text-transform: uppercase;
+            margin-top: 2.5rem;
+            position: relative;
+            transition: all .2s linear;
+           
+        }
+         button:hover{
+            color:#607d8b;
+            background-color:white;
+        } 
+        @media (max-width:1024px) {
+            .form-box {
+             width: 58%;
+            }
+        }
+        @media (max-width:768px) {
+          
+            .left-part {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            .right-part {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index:1;
+            }
+            .form-box {
+             width: 60%;
+             background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+             padding:3rem;
+            }
+        }
+        @media (max-width:425px)
+        {
+            .form-box{
+                width:100%;
+                padding:1rem;
+            }
+            .form-box h1::before{
+               width:28%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="left-part">
+            <img src="athelete.jpg" class="image" alt="">
+        </div>
+        <div class="right-part">
+            <div class="form-box">
+                <h1>login</h1>
+                <form action="action.php" method="post">
+                   <div class="input-box">
+                        <span>name:</span>
+                        <input type="text" name="name" required>
+                   </div>
+                   <div class="input-box">
+                        <span>email:</span>
+                        <input type="email" name="email" required>
+                   </div>
+                   <div class="input-box">
+                       <span>username:</span>
+                       <input type="text" name="username" required>
+                   </div>
+                   <div class="input-box">
+                       <span>password:</span>
+                       <input type="text" name="password" minlength="8" maxlength="15">
+                   </div>
+                 <button type="submit">signup</button>
+
+                
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

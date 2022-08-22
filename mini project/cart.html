@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SNEAKER HEADZ</title>
+        <link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+	
+	</head>
+	<body>
+        <div class="navbar">
+			<div class="logo">
+				<img src="resources/logo.png" width="125px">
+			</div>
+
+        <style>
+            .btn-mid{
+                margin:15px auto;
+                display: block;
+                width:100px;
+                text-align: center;
+                background-color: #555;
+            }
+            .small-container {
+                max-width: 1250px;
+            }
+            .menu{
+                width: 50px;
+                height:60px;
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+                left:95.5%;
+                background: black;
+                overflow: hidden;
+                z-index: 5;
+            }
+            .burger{
+                width:2.5rem;
+                height:.2rem;
+                background: white;
+                transition: all .5s ease-in-out;
+                margin: 27px 10px;
+                
+            }
+            
+            .burger::before,
+            .burger::after{
+                content: "";
+                position: absolute;
+                width: 2.5rem;
+                height:0.2rem;
+                background-color:white;
+                transition: all .5s ease-in-out;
+            }
+        </style>
+</head>
+<div class="menu">
+    <div class="burger"></div>
+</div>
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+</div>
+<!------cart items details----->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>product</th>
+            <th>quantity</th>
+            <th>subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="new releases/nw releases 5.jpg">
+                    <div>
+                        <p>AIR FORCE 1 '07 LV9</p>
+                        <small>price:₹ 9,695</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+                
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹ 9,695</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="new releases/nw releases 3.jpg">
+                    <div>
+                        <p>
+                            BASQUIAT CHUCK 70</p>
+                        <small>price:₹ 8,999</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+                
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>rs :₹ 8,999</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="new releases/nw releases 7.jpg">
+                    <div>
+                        <p>KYRIE INFINITY EP 'KY-D'</p>
+                        <small>price:₹ 11,495</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+                
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹ 11,495</td>
+        </tr>
+    </table>
+        <div class="total-price">
+            <table>
+            <tr>
+                <td>subtotal</td>
+                <td>30,189</td>
+            </tr>
+            <tr>
+                <td>tax</td>
+                <td>1,500</td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td>31,689</td>
+            </tr>
+    </table>
+        </div>
+</div>
+
+<!----footer------>
+<div class="footer">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download Our App</h3>
+				<p>Download App for Android and ios mobile phone.</p>
+				<div class="app-logo">
+					<img src="brands/play-store.png">
+					<img src="brands/app-store.png">
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="brands/download-removebg-preview.png">
+				<p>Sneaker headz is India’s first multi-brand sneaker store, based in Delhi..</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>follow us</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>Youtube</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2022 - @prinson, @vishesh</p>
+
+</div>
+
+<!-------js for toglle----->
+<script>
+    // var menuitems = document.getElementById(".menuitems");
+
+    // menuitems.style.maxHeight = "0px";
+
+    // function menutoggle(){
+    // 	if(menuitems.style.maxHeight == "0px")
+    // {
+    // 	menuitems.style.maxHeight = "200px";
+    // }
+    // else
+    // {
+    // 	menuitems.style.maxHeight = "0px";
+    // }
+
+
+
+    const menu = document.querySelector(".menu");
+    const nav = document.querySelector(".sidenav");
+    let menuopen = false;
+    menu.addEventListener('click', () => {
+        if (!menuopen) {
+            menu.classList.add("open");
+            nav.style.width = "200px"
+            menuopen = true;
+            menu.style.display = "none";
+        }
+        else {
+            menu.classList.remove("open");
+            menuopen = false;
+        }
+    });
+
+    function closeNav() {
+        nav.style.width = "0px";
+        menu.style.display = "block";
+        menu.classList.remove("open");
+        menuopen = false;
+    }
+
+
+    const add = document.querySelectorAll(".btn-mid");
+    const hello = document.querySelectorAll(".btn-mid").length;
+    console.log(hello);
+    var i;
+    for (i=0;i<hello;i++)
+    {
+        add[i].addEventListener('click' , ()=>
+        {
+            alert("prodcut added to cart");
+        })
+    }
+
+
+
+</script>
+</script>
+</body>
+</html>

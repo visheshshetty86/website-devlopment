@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            text-rendering: optimizeLegibility;
+            font-size: 15px;
+        }
+        header{
+            width:100vw;
+            height: 100vh;
+            overflow-x: hidden;
+            position: absolute;
+        }
+        .menu{
+            width: 60px;
+            height:60px;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            left:97%;
+            background: black;
+            overflow: hidden;
+            z-index: 5;
+        }
+        .burger{
+            width:2.5rem;
+            height:.2rem;
+            background: red;
+            transition: all .5s ease-in-out;
+            margin: 27px 10px;
+            
+        }
+        .burger::before,
+        .burger::after{
+            content: "";
+            position: absolute;
+            width: 2.5rem;
+            height:0.2rem;
+            background-color:red;
+            transition: all .5s ease-in-out;
+        }
+        .burger::before{
+            transform: translateY(-10px);
+        }
+        .burger::after{
+            transform: translateY(10px);
+        }
+
+
+        .open .burger{
+            transform: translateX(-50px);
+            background: transparent;
+        }
+
+        
+        .open .burger::before{
+            transform: rotate(45deg) translate(35px , -35px);
+        }
+        .open .burger::after{
+            transform: rotate(-45deg) translate(35px , 35px);
+        }
+        .nav{
+          
+            position: fixed;
+            width:200vw;
+            height:250vh;
+            top:-70%;
+            left:-50%;
+            background: black;
+            transform:scale(0);
+            transition: all .7s ease-in-out;   
+            border-radius:100%;
+            
+        }
+        .nav ul{
+            position: relative;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            color:red;
+            list-style: none;
+            line-height: 2;
+            text-align:center;
+            
+        }
+        .nav ul li{
+            text-decoration: none;
+            font-size: 1.5rem;
+            text-transform:uppercase;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <div class="menu">
+            <div class="burger"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>info</li>
+            </ul>
+        </div>
+      
+
+    </header>
+
+<script>
+    const menu = document.querySelector(".menu");
+    const nav =document.querySelector(".nav");
+    let menuopen=false;
+    menu.addEventListener('click', ()=>
+    {
+        if(!menuopen)
+        {
+            menu.classList.add("open");
+            nav.style.transform="scale(1)";
+            menuopen=true;
+        }
+        else
+        {
+            menu.classList.remove("open");
+            nav.style.transform="scale(0)";
+            menuopen=false;
+        }
+    })
+</script>
+    
+</body>
+</html>
