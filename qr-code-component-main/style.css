@@ -1,0 +1,39 @@
+body {
+  background-color: hsl(219, 34%, 73%);
+}
+
+.container {
+  margin-top: 150px;
+  display: grid;
+  place-items: center;
+}
+.white-box {
+  display: grid;
+  place-items: center;
+  height: 380px;
+  width: 220px;
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid white;
+  border-radius: 30px;
+}
+.qr-code img {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+
+.white-box p:first-child {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 800;
+  font-style: bold;
+}
+
+.white-box p:nth-of-type(2) {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-bottom: 100px;
+  padding-right: 20px;
+  color: grey;
+}
